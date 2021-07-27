@@ -1,0 +1,126 @@
+extends base.pug 
+
+block scripts 
+    script(type='text/javascript', src='../static/scripts/index.js')
+
+block styles 
+    link(rel="stylesheet", href="../static/css/index.css")
+
+block content
+    div.content
+        div.phone
+            div.head.head-1.active#head-1(onclick="toggle_cl11()")
+                h2 Class 11 
+                    hr.head-line#line11 
+            div.head.head-2#head-2(onclick="toggle_cl12()")
+                h2 Class 12
+                    hr.head-line#line12 
+        div.clas 
+            div.cls#c11 
+                h2 Class 11
+                ul 
+                    span.cl-stream Sci.
+                    li.subject 
+                        a(href="/maths_11")
+                            | Maths 
+                            hr.hover 
+                    li.subject 
+                        a(href="/physics_11")
+                            | Physics 
+                            hr.hover 
+                    li.subject 
+                        a(href="/chemistry_11")
+                            | Chemistry 
+                            hr.hover 
+                    li.subject 
+                        a(href="/biology_11")
+                            | Biology 
+                            hr.hover 
+                    li.subject 
+                        a(href="/computer_11")
+                            |  Computer
+                            hr.hover 
+                    li.subject 
+                        a(href="english_11")
+                            | English 
+                            hr.hover 
+                    li.subject 
+                        a(href="/physical_11")
+                            | Physical Education 
+                            hr.hover 
+                    hr
+                    span.cl-stream Com.
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+            div.cls#c12 
+                h2 Class 12
+                ul 
+                    span.cl-stream Sci.
+                    li.subject 
+                        a(href="/maths_12")
+                            | Maths 
+                            hr.hover 
+                    li.subject 
+                        a(href="/physics_12")
+                            | Physics 
+                            hr.hover 
+                    li.subject 
+                        a(href="/chemistry_12")
+                            | Chemistry 
+                            hr.hover 
+                    li.subject 
+                        a(href="/biology_12")
+                            | Biology 
+                            hr.hover 
+                    li.subject 
+                        a(href="/computer_12")
+                            |  Computer
+                            hr.hover 
+                    li.subject 
+                        a(href="/english_12")
+                            | English 
+                            hr.hover 
+                    li.subject 
+                        a(href="/physical_12")
+                            | Physical Education 
+                            hr.hover 
+                    hr
+                    span.cl-stream Com.
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover
+                    li.subject 
+                        a(href="#")
+                            | To Change 
+                            hr.hover

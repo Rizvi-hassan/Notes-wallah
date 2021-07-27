@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Titillium+Web&display=swap');
+
+
+.content{
+    z-index: -1;
+    background: linear-gradient(180deg, #073e48, transparent);
+    min-height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.content .clas{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .cls{
+    position: relative;
+    width: 40%;
+    margin: 47px;
+    border-radius: 1rem;
+    background: rgb(250, 238, 217);
+    box-shadow: 0px 0px 20px;
+    text-align: center;
+}
+
+.content .cls ul{
+    padding: 4px;
+    position: relative;
+}
+
+.content .cls h2{
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    color:  #01292e ;
+    margin-top: 0.4rem 0;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.content .cls ul .cl-stream{
+    position: relative;
+    font-size: 1.6rem;
+    color: grey;
+    width: 100%;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.content .cls ul li{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.content .cls ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+.hover{
+    border: 1px solid black;
+    width: 100%;
+    transform: translateX(-101%);
+    transition: transform 300ms;
+}
+
+.content .cls ul li:hover .hover{
+    transform: translateX(-0%);
+}
+
+.content .phone{
+    display: none;
+}
+
+@media (max-width: 680px){
+    .content{
+        flex-direction: column;
+    }
+    .content .phone{
+        display: inline;
+        width: 100%;
+        text-align: center;
+    }
+    .head{
+        font-family: 'Prompt', sans-serif;
+        margin: 1rem 1rem ;
+        display: inline-block;
+        margin-bottom: 0rem;
+        cursor: pointer;
+    }
+    .head h2{
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.5;
+        overflow: hidden;
+    }
+    .content .phone .head-line{
+        border: 2px solid;
+        border-radius: 3px;
+        transition: transform 300ms;
+    }
+    
+    .content .phone .head-1.active #line11{
+        transform: translateX(0%);
+    }
+    .content .phone .head-2 #line12{
+        transform: translateX(-100%);
+    }
+    
+    .content .phone .head-1 #line11{
+        transform: translateX(101%);
+    }
+    .content .phone .head-2.active #line12{
+        transform: translateX(0%);
+    }
+    
+    .content .clas{
+        flex-direction: row;
+        min-width: 100%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .cls{
+        min-width: 70%;
+        transition: margin 0.5s;
+    }
+    #c11{
+        margin-left: 95%;
+    }
+    #c11.active{
+        margin-left: -80%;
+    }
+    
+    .cls h2{
+        color: #459ba7;
+    }
+}
+
+@media (max-width:425px){
+    #c11{
+        margin-left: 104%;
+    }
+    #c11.active{
+        margin-left: -83%;
+    }
+}
+
+@media (max-width:375px){
+    #c11{
+        margin-left: 110%;
+    }
+    #c11.active{
+        margin-left: -83%;
+    }
+}
+
+@media (max-width:320px){
+    #c11{
+        margin-left: 113%;
+    }
+    #c11.active{
+        margin-left: -85%;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "notes_wallah",
+  "version": "1.0.0",
+  "description": "This is a website which porvides you all kinds of notes for class 11 and 12",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Md Rizvi Hassan Ansari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  }
+}
