@@ -1,0 +1,33 @@
+.content-contact {
+    padding-left: 10%;
+    padding-top: 4%;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.content-contact h1{
+    text-decoration: underline;
+    padding-bottom: 3%;
+}
+
+.content-contact p{
+    padding-bottom: 0.5%;
+    display: list-item;
+}
+.content-contact p::marker{
+    content: "# ";
+    color: aqua;
+}
+
+.content-contact a{
+    color: black;
+    text-decoration: wavy;
+    font-weight: bold;
+    transition: color 500ms, text-decoration 500ms;
+}
+
+.content-contact a:hover{
+    color: white;
+    text-decoration: underline;
+}

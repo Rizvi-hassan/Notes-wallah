@@ -27,6 +27,10 @@ app.get('/contributers', (req, res) =>{
     res.status(200).render('contributers.pug');
 });
 
+app.get('/contact', (req, res) =>{
+    res.status(200).render('contact.pug');
+});
+
 const end_pt11 = require('./static/modules/port_c11');
 end_pt11.get_port(app);
 
