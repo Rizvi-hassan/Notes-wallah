@@ -17,6 +17,12 @@
     letter-spacing: 1px ;
     padding-bottom: 1rem;
     line-height: 1.5;
+    display: list-item;
+}
+.content_about p::marker{
+    content: "# ";
+    font-weight: bold;
+    color: aqua;
 }
 
 .content_about a{
