@@ -7,10 +7,16 @@
     padding-right: 4rem;
 }
 
+.content_about h1{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+
 .content_about h2{
     font-size: 2rem;
     padding: 1rem 0;
-    text-decoration: underline;
     display: list-item;
 }
 

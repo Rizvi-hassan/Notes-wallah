@@ -8,6 +8,8 @@
 
 .content-contact h1{
     text-decoration: underline;
+    /* text-align: center; */
+    font-family: 'Josefin Sans', sans-serif;
     padding-bottom: 3%;
 }
 
