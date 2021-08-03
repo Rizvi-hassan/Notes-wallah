@@ -17,7 +17,9 @@
     min-width: 50%;
     margin: 2rem;
 }
-
+a{
+    color: white;
+}
 #container .content_space a{
     color: white;
     padding: 1rem ;
