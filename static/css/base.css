@@ -187,7 +187,7 @@ body{
 
 .insert_content{
     margin-left: var(--width-nav);
-    min-height: 76vh;
+    min-height: 77vh;
     background: linear-gradient(180deg, #073e48, transparent);
 }
 
@@ -196,8 +196,9 @@ body{
     background-color: black;
     color: white;
     text-align: center;
-    height: 4vh;
+    height: 3vh;
     line-height: 1.5;
+    font-size: 75%;
 }
 
 
