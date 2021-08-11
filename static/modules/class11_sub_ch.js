@@ -245,6 +245,10 @@ app.get('/computer_ch23_11', (req, res) => {
 }
 
 function port_english1(app) {
+    app.get('/english_syllabus', (req, res) => {
+        res.status(200).render('class_11/english1/syllabus.pug');
+    });
+
     app.get('/english1_ch1_11', (req, res) => {
         res.status(200).render('class_11/english1/ch1.pug');
     });
