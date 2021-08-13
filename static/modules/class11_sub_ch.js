@@ -147,6 +147,10 @@ function port_chemistry(app){
 }
 
 function port_computer(app){
+    app.get('/computer_assign', (req, res) => {
+        res.status(200).render('class_11/computer/assign.pug');
+    });
+
     app.get('/computer_programs', (req, res) => {
         res.status(200).render('class_11/computer/prog.pug');
     });

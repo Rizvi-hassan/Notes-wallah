@@ -3,6 +3,10 @@ function port(app) {
         const params = {    }
         res.status(200).render('class_11/maths.pug', params);
     });
+    app.get('/sylabuss_11', (req, res) =>{
+        const params = {    }
+        res.status(200).render('class_11/sylabuss.pug', params);
+    });
     app.get('/physics_11', (req, res) =>{
         const params = {    }
         res.status(200).render('class_11/physics.pug', params);
