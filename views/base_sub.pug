@@ -1,26 +1,38 @@
 extends base.pug
 block scripts 
-    script(type='text/javascript', src='../../static/scripts/index.js')
+    script(type='text/javascript', src='../../static/scripts/base-sub.js')
     
 block styles 
     link(rel="stylesheet", href="../static/css/base-sub.css")
+    //- link(rel="stylesheet", href="../static/css/index.css")
+
 block content 
     div.content
         div.phone
-            div.head.head-1.active#head-1(onclick="toggle_cl11()")
-                h2 Page 1
+            //- div.head.head-1.active#head-1(onclick="toggle_cl11()")
+            //-     h2 Page 1
+            //-         hr.head-line#line11 
+            //- div.head.head-2#head-2(onclick="toggle_cl12()")
+            //-     h2 Page 2
+            //-         hr.head-line#line12 
+
+            div.head.head-1#head-1(onclick="toggle_cl11()")
+                h2 Page 1 
                     hr.head-line#line11 
             div.head.head-2#head-2(onclick="toggle_cl12()")
                 h2 Page 2
                     hr.head-line#line12 
         div.clas 
-            div.cls#c11 
-                h2 
-                    block sub-name1
-                ul 
-                    block list-1
-            div.cls#c12 
-                h2 
-                    block sub-name2
-                ul 
-                    block list-2
+            div.cls-box
+                div.cls-box-inner#inner-2 
+                    div.cls#c11 
+                        h2 
+                            block sub-name1
+                        ul 
+                            block list-1
+                div.cls-box-inner#inner-3 
+                    div.cls#c12 
+                        h2 
+                            block sub-name2
+                        ul 
+                            block list-2

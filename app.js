@@ -31,6 +31,9 @@ app.get('/contact', (req, res) =>{
     res.status(200).render('contact.pug');
 });
 
+const end_pt10 = require('./static/modules/port_c10');
+end_pt10.get_port(app);
+
 const end_pt11 = require('./static/modules/port_c11');
 end_pt11.get_port(app);
 
@@ -60,6 +63,24 @@ end_pt11_physical.get_port_physical(app);
 
 const end_pt11_bio = require('./static/modules/class11_sub_ch.js');
 end_pt11_bio.get_port_bio(app);
+
+const end_pt10_maths = require('./static/modules/class10_sub_ch.js');
+end_pt10_maths.get_port_maths(app);
+
+const end_pt10_science = require('./static/modules/class10_sub_ch.js');
+end_pt10_science.get_port_science(app);
+
+const end_pt10_english = require('./static/modules/class10_sub_ch.js');
+end_pt10_english.get_port_english(app);
+
+const end_pt10_hindi = require('./static/modules/class10_sub_ch.js');
+end_pt10_hindi.get_port_hindi(app);
+
+const end_pt10_it = require('./static/modules/class10_sub_ch.js');
+end_pt10_it.get_port_it(app);
+
+const end_pt10_sst = require('./static/modules/class10_sub_ch.js');
+end_pt10_sst.get_port_sst(app);
 
 
 
