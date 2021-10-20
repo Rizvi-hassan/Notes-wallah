@@ -1,4 +1,7 @@
 function port_math(app){
+    app.get('/maths_ch-1_11', (req, res) => {
+        res.status(200).render('class_11/maths/ch-1.pug');
+    });
     app.get('/maths_ch0_11', (req, res) => {
         res.status(200).render('class_11/maths/ch0.pug');
     });
