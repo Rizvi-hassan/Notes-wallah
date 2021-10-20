@@ -57,6 +57,9 @@ function port_math(app){
 }
 
 function port_physics(app){
+    app.get('/physics_ch-1_11', (req, res) => {
+        res.status(200).render('class_11/physics/ch-1.pug');
+    });
     app.get('/physics_ch1_11', (req, res) => {
         res.status(200).render('class_11/physics/ch1.pug');
     });
