@@ -11,14 +11,14 @@
     width: 8px;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent, #002329);
+    background: linear-gradient(transparent, #708e6e);
     border-radius: 5px;
 }
 ::-webkit-scrollbar-track{
-    background: #6db0bc;
+    background: #000000;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(transparent, #1deacf);
+    background: linear-gradient(transparent, #ffffff);
     
 }
 
@@ -29,15 +29,24 @@
 }
 
 body{
-    background-color: #bd4da9;
+    background-color: #729070;
     font-family: poppins;
 }
-
+.preloader{
+    background: #000 url(../img/preloader.gif) no-repeat center;
+    background-size: 14%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    color: white;
+    transition: opacity 800ms ease;
+}
 .navigation{
     position: fixed;
     width: var(--width-nav);
     height: 100%;
-    background-color:#073e48 ;
+    background-color:#000000 ;
     transition: 0.5s;
     overflow: hidden;
     z-index: 1;
@@ -144,7 +153,7 @@ body{
      color: white;
      text-align: center;
      line-height: 1.4;
-     background:#073e48;
+     background:#000000;
      width:auto ;
      padding-bottom: 1rem;
      padding-top: 5px;
@@ -188,7 +197,7 @@ body{
 .insert_content{
     margin-left: var(--width-nav);
     min-height: 77vh;
-    background: linear-gradient(180deg, #073e48, transparent);
+    background: linear-gradient(180deg, #000000, transparent);
 }
 
 .foot{
@@ -220,6 +229,9 @@ body{
     }
     .navigation.active{
         width: 200px;
+    }
+    .preloader{
+        background-size: 23%;
     }
 }
 

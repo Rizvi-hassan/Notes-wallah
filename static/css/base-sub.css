@@ -6,7 +6,7 @@
 
 .content{
     z-index: -1;
-    background: linear-gradient(180deg, #073e48, transparent);
+    background: linear-gradient(180deg, #000000, transparent);
     min-height: 100%;
     display: flex;
     justify-content:center;
