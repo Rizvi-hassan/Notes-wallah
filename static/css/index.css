@@ -117,6 +117,7 @@
         display: inline-block;
         margin-bottom: 0rem;
         cursor: pointer;
+        color: white;
     }
     .head h2{
         font-size: 1.3rem;
@@ -125,11 +126,11 @@
         overflow: hidden;
     }
     .content .phone .head-line{
-        border: 2px solid black;
+        border: 2px solid rgb(255, 255, 255);
         border-radius: 3px;
         transition: transform 300ms;
         transform: translateX(-101%);
-        background-color: black;
+        background-color: rgb(255, 255, 255);
     }
     
     #line11{
