@@ -29,8 +29,53 @@
 }
 
 body{
-    background-color: #729070;
+    background-color: #907070;
+    animation: bgcolor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
     font-family: poppins;
+}
+
+@keyframes bgcolor {
+    0%{
+        background-color:#907070;
+    }
+    10%{
+        background-color: #908a70;
+    }
+    20%{
+        background-color: #889070;
+    }
+    25%{
+        background-color: #7e9070;
+    }
+    30%{
+        background-color: #709075;
+    }
+    40%{
+        background-color: #709072;
+    }
+    50%{
+        background-color: #709088;
+    }
+    60%{
+        background-color: #708290;
+    }
+    70%{
+        background-color: #707890;
+    }
+    75%{
+        background-color: #7e7090;
+    }
+    80%{
+        background-color: #8b7090;
+    }
+    90%{
+        background-color: #907080;
+    }
+    100%{
+        background-color:#907070;
+    }
 }
 .preloader{
     background: #000 url(../img/preloader.gif) no-repeat center;
