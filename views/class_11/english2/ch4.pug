@@ -1,6 +1,15 @@
-extends ../../base.pug
-block scripts 
-    link(rel="stylesheet", href="../static/css/chapter.css")
+extends ../../chap_loaded.pug 
 
-block content 
-    p Notes will be available soon 
+
+block title-space 
+    a(href="physics_11") 
+        | Albert Einstein at School 
+block content-space 
+    div.content_space 
+        a(href="https://drive.google.com/file/d/1Gf1_7NuSD87rdG1jtgd_5fH44b317Tzg/view?usp=sharing" target='_blank') Summary and lesson explanation  
+            i.fa.fa-arrow-right(aria-hidden='true')
+        <iframe src="https://drive.google.com/file/d/1Gf1_7NuSD87rdG1jtgd_5fH44b317Tzg/preview" width="640" height="480" allow="autoplay"></iframe>
+    div.content_space 
+        a(href="https://drive.google.com/file/d/1zogNdO6u0lnR1cM_2ObbC0liXzoMr3tB/view?usp=sharing" target='_blank') Qusetion and Answers 
+            i.fa.fa-arrow-right(aria-hidden='true')
+        <iframe src="https://drive.google.com/file/d/1zogNdO6u0lnR1cM_2ObbC0liXzoMr3tB/preview" width="640" height="480" allow="autoplay"></iframe>
