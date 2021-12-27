@@ -30,6 +30,9 @@ app.get('/contributers', (req, res) =>{
 app.get('/contact', (req, res) =>{
     res.status(200).render('contact.pug');
 });
+app.get('/Dev', (req, res) =>{
+    res.status(200).render('dev.pug');
+});
 
 const end_pt10 = require('./static/modules/port_c10');
 end_pt10.get_port(app);

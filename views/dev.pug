@@ -1,0 +1,14 @@
+extends base.pug 
+
+block styles 
+    link(rel="stylesheet", href="../static/css/dev.css")
+
+block content 
+    div.content_about 
+        h1 Websites
+        div.cards
+            a(href="../static/dev_tools/background.html").card 
+                h2 New Background  
+                img(src="../static/img/background.JPG", alt="")
+                p This page will change the background image every time you refresh the page. The images are provided by picsum which is powered by adobe.
+            
