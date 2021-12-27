@@ -44,7 +44,7 @@
 }
 
 .content_about .cards .card img{
-    width: -webkit-fill-available;
+    width:100%;
     border-radius: 6px;
     margin: 1rem 0;
 }
