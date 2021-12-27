@@ -1,6 +1,15 @@
-extends ../../base.pug
-block scripts 
-    link(rel="stylesheet", href="../static/css/chapter.css")
+extends ../../chap_loaded.pug 
 
-block content 
-    p Notes will be available soon 
+
+block title-space 
+    a(href="/chemistry_11") 
+        | Organic Chemistry-Some Basic Principles and Techniques 
+block content-space 
+    div.content_space 
+        a(href="https://drive.google.com/file/d/12wVCkPBdBT-HTdbwxRz3d0-TRyuPgiJX/view?usp=sharing" target='_blank') Introduction 
+            i.fa.fa-arrow-right(aria-hidden='true')
+        <iframe src="https://drive.google.com/file/d/12wVCkPBdBT-HTdbwxRz3d0-TRyuPgiJX/preview" width="640" height="480" allow="autoplay"></iframe>
+    div.content_space 
+        a(href="https://drive.google.com/file/d/12rugdMuo_SX2a5xUse4TDkNVPEA4jNJE/view?usp=sharing" target='_blank') IUPAC Nomenclature  
+            i.fa.fa-arrow-right(aria-hidden='true')
+        <iframe src="https://drive.google.com/file/d/12rugdMuo_SX2a5xUse4TDkNVPEA4jNJE/preview" width="640" height="480" allow="autoplay"></iframe>
