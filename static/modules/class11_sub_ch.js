@@ -160,101 +160,14 @@ function port_computer(app){
         res.status(200).render('class_11/computer/assign.pug');
     });
 
-    app.get('/computer_programs', (req, res) => {
-        res.status(200).render('class_11/computer/prog.pug');
+    app.get('/computer_programs_term_1', (req, res) => {
+        res.status(200).render('class_11/computer/prog_1.pug');
+    });
+    app.get('/computer_programs_term_2', (req, res) => {
+        res.status(200).render('class_11/computer/prog_2.pug');
     });
 
-    app.get('/computer_ch1_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch1.pug');
-    });
 
-app.get('/computer_ch2_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch2.pug');
-    });
-
-app.get('/computer_ch3_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch3.pug');
-    });
-
-app.get('/computer_ch4_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch4.pug');
-    });
-
-app.get('/computer_ch5_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch5.pug');
-    });
-
-app.get('/computer_ch6_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch6.pug');
-    });
-
-app.get('/computer_ch7_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch7.pug');
-    });
-
-app.get('/computer_ch8_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch8.pug');
-    });
-
-app.get('/computer_ch9_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch9.pug');
-    });
-
-app.get('/computer_ch10_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch10.pug');
-    });
-
-app.get('/computer_ch11_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch11.pug');
-    });
-
-app.get('/computer_ch12_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch12.pug');
-    });
-
-app.get('/computer_ch13_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch13.pug');
-    });
-
-app.get('/computer_ch14_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch14.pug');
-    });
-
-app.get('/computer_ch15_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch15.pug');
-    });
-
-app.get('/computer_ch16_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch16.pug');
-    });
-
-app.get('/computer_ch17_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch17.pug');
-    });
-
-app.get('/computer_ch18_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch18.pug');
-    });
-
-app.get('/computer_ch19_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch19.pug');
-    });
-
-app.get('/computer_ch20_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch20.pug');
-    });
-
-app.get('/computer_ch21_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch21.pug');
-    });
-
-app.get('/computer_ch22_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch22.pug');
-    });
-
-app.get('/computer_ch23_11', (req, res) => {
-        res.status(200).render('class_11/computer/ch23.pug');
-    });
 }
 
 function port_english1(app) {
