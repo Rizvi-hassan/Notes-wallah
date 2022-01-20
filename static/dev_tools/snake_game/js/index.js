@@ -229,10 +229,10 @@ window.addEventListener('keydown', e => {   // keyboard controls
     }
 });
 
-// musicSound.play();
-// let music = setInterval(() => {
-//     musicSound.play();
-// }, 1);
+musicSound.play();
+let music = setInterval(() => {
+    musicSound.play();
+}, 1);
 
 
 
