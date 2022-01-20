@@ -25,20 +25,27 @@
 }
 
 .head{
-    background: linear-gradient(red, yellow);
-    border: 2px solid purple;
-    border-radius: 9px;
-    transform:scale(1.02)
+    background: url('../head.png') center;
+    background-size: 100%;
+    transform:scale(1.02);
 }
 .snake{
-    background-color: purple;
-    border: .25vmin solid white;
-    border-radius: 12px;
+    background-color: #0100c8;
+    /* border: 0.25vmin solid #0100c8; */
+    border-radius: 27%;
+    /* width: 1%; */
+    height: 100%;
+    margin: auto 0px;
+    transform: scale(0.9);
+ }
+ .snake:last-child{
+     border-radius: 100%;
  }
 .food{
-    background:linear-gradient(red, purple);
-    border: .25vmin solid black;
-    border-radius: 8px;
+    background: url(../food.png) center no-repeat;
+    /* border: 0.25vmin solid black; */
+    border-radius: 6px;
+    background-size: 93%;
 }
 
 .controlpanel{

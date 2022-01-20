@@ -159,6 +159,18 @@ function gameEngine() {
         snakeElement.style.gridColumnStart = e.x;
         if (index === 0) {
             snakeElement.classList.add('head');
+            if (inputDir.x === -1 && inputDir.y === 0) {
+                snakeElement.style.transform = "rotate(180deg)";
+            }
+            else if (inputDir.x === 0 && inputDir.y === 1) {
+                snakeElement.style.transform = "rotate(90deg)";
+            }
+            else if (inputDir.x === 0 && inputDir.y === -1) {
+                snakeElement.style.transform = "rotate(270deg)";
+            }
+            else{
+                snakeElement.style.transform = "rotate(0deg)";
+            }
         }
         else {
             snakeElement.classList.add('snake');
@@ -217,10 +229,10 @@ window.addEventListener('keydown', e => {   // keyboard controls
     }
 });
 
-musicSound.play();
-let music = setInterval(() => {
-    musicSound.play();
-}, 1);
+// musicSound.play();
+// let music = setInterval(() => {
+//     musicSound.play();
+// }, 1);
 
 
 
