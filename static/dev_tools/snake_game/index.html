@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-     <div class="body">
-         <div id="board"></div>
-         <div id="gameover" class="" >
+    <div class="body">
+        <div id="board"></div>
+        <div id="gameover" class="">
             Game Over!
             <h2 id="c_score">Current Score: 0</h2>
             <h2 id="h_score">High Score: 0</h2>
             <button id="restart">Restart</button>
-         </div>
-         <div class="controlpanel">
-             <div class="score" id="score">Score: 0</div>
-             <div class="score" id="highscore">High Score: 0</div>
-             <div id="buttons_swap" class="buttons">
-                 <div class="control">
-                     <button id="play_pause">Play</button>
-                     <button id="restart_1">Restart</button>
-                     <button id="swap_control">Swap Controls</button>
-                 </div>
-                 <div class="move">
-                     <button id="move_up">up</button>
-                     <button id="move_down">down</button>
-                     <button id="move_left">left</button>
-                     <button id="move_right">right</button>
-                 </div>
-             </div>
-         </div>
-     </div>
+        </div>
+        <div class="controlpanel">
+            <div class="score" id="score">Score: 0</div>
+            <div class="score" id="highscore">High Score: 0</div>
+            <div id="buttons_swap" class="buttons">
+                <div class="control">
+                    <button id="play_pause">Play</button>
+                    <button id="restart_1">Restart</button>
+                    <button id="swap_control">Swap Controls</button>
+                </div>
+                <div class="move">
+                    <button id="move_up"><i class="fas fa-arrow-circle-up"></i></button>
+                    <button id="move_down"><i class="fas fa-arrow-circle-down"></i></button>
+                    <button id="move_left"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button id="move_right"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="js/index.js"></script>
+
 </html>

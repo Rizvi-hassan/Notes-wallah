@@ -49,15 +49,12 @@
 }
 
 .controlpanel{
-    border: 2px solid black;
     margin: 1px;
     padding: 1px;
-    width: 60vmin;
+    width: 95vmin;
     height: 60vmin;
     margin-left: 3rem;
-    /* align-items: center; */
     text-align: center;
-    background: #8aa903;
 }
 .score{
     margin: 3px;
@@ -88,31 +85,43 @@
 
 #move_up, #move_down, #move_right, #move_left{
     position: absolute;
-    min-width: 60px;
-    min-height: 60px;
-    border-radius: 15px;
+    min-width: 71px;
+    min-height: 71px;
+    border-radius: 9px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     background: #b7d041;
+
 } 
+
+#move_up:active, #move_down:active, #move_right:active, #move_left:active{
+    background-color: black;
+}
 #move_up{
-    top: 36px;
-    left: 95px;
+    top: 6%;
+    left: 40%;
 }
 #move_down{
-    top: 154px;
-    left: 95px;
+    top: 68%;
+    left: 40%;
 }
 #move_left{
-    top: 95px;
-    left: 36px;
+    top: 37%;
+    left: 19%;
 }
 #move_right{
-    top: 95px;
-    left: 154px;
+    top: 37%;
+    left: 61%;
 }
 
+i{
+    font-size: 293%;
+}
+
+i:active{
+    color: #b7d041;
+}
 
 #play_pause, #restart_1, #swap_control{
     font-weight: bolder;
@@ -188,8 +197,8 @@
     }
     #move_up, #move_down, #move_right, #move_left {
         position: absolute;
-        min-width: 50px;
-        min-height: 50px;
+        min-width: 54px;
+        min-height: 54px;
         border-radius: 15px;
         text-align: center;
         font-size: 14px;
