@@ -99,6 +99,7 @@
     font-weight: bold;
     background: #b7d041;
 
+    outline:none;
 } 
 
 #move_up:active, #move_down:active, #move_right:active, #move_left:active{
@@ -122,6 +123,7 @@ i:active{
     border-radius: 6px;
     height: 43px;
     font-size: 17px;
+
 }
 
 #gameover{
@@ -196,6 +198,7 @@ i:active{
         font-size: 20px;
         font-weight: bold;
         background: #b7d041;
+        Outline: none;
     }
 
 }
