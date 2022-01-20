@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="canvas">
+        <div id="control_panel" class="control_panel">
+            <h2>Snake Mania!!</h2>
+            <span id="high_score">High Score: 0</span>
+            <button id="play_pause">Play</button>
+            <button id="is_multiplayer">Multi Player</button>
+        </div>
+        <div id="game_over">Game Over!!
+            <span id="high_score_1"></span>
+            <span id="score_disp">Score: 5000</span>
+            <button id="game_restart">Restart</button>
+        </div>
+        <div class="controler">
+            <span class="player" id="player_1">Player</span>
+            <button class="control_buttons" id="r_go_up" onmousedown="clicked(1)" onmouseup="not_clicked(1)">
+                <i class="fas fa-arrow-up"></i></button>
+            <button class="control_buttons" id="r_go_down" onmousedown="clicked(2)" onmouseup="not_clicked(2)">
+                <i class="fas fa-arrow-down"></i>
+        </div>
+        <div id="board"></div>
+        <div class="controler">
+            <div id="blocker" class="blocker">You are playing single player</div>
+            <span class="player" id="player_2">Bot</span>
+            <button class="control_buttons" id="l_go_up" onmousedown="clicked(-1)" onmouseup="not_clicked(-1)">
+                <i class="fas fa-arrow-up"></i></button>
+            <button class="control_buttons" id="l_go_down" onmousedown="clicked(-2)" onmouseup="not_clicked(-2)">
+                <i class="fas fa-arrow-down"></i>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>
