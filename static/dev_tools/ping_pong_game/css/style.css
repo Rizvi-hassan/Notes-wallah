@@ -96,6 +96,7 @@ button{
     border-radius: 8px;
     font-weight: bold;
     letter-spacing: 1px;
+    outline: none;
 }
 button:active{
     background-color: white;
@@ -141,7 +142,7 @@ h2{
     border: 2px solid white;
     color: white;
     width: 30vmin;
-    height: 40vmin;
+    height: 60vmin;
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
@@ -167,9 +168,9 @@ h2{
     font-weight: bold;
 }
 
-.control_buttons{
-    width: 10vmin;
-    height: 10vmin;
+.control_buttons {
+    width: 16vmin;
+    height: 16vmin;
 }
 
 i{

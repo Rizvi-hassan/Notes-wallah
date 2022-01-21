@@ -259,7 +259,7 @@ function branch(ctime2) {
 function Interval() {
     let speed_inc = setInterval(() => {
         speed += 0.5;
-    }, 5000);
+    }, 10000);
 }
 
 function playPause() {
