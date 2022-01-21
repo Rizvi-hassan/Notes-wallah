@@ -36,7 +36,7 @@
     align-items: self-end;
     flex-direction: column-reverse;
     top: 5px;
-    right: 5px;
+    right: 5vmin;
 }
 
 #pauseIcon i{
