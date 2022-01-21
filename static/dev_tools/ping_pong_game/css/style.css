@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: monospace;
 }
+
+
 #canvas{
     position: relative;
     width: 100vw;
@@ -22,6 +24,27 @@
     display: grid;
     grid-template-rows: repeat(36, 1fr);
     grid-template-columns: repeat(60, 1fr);
+}
+
+#pause{
+    color: white;
+    position: absolute;
+    width: 25vmin;
+    height: 17vmin;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-end;
+    flex-direction: column-reverse;
+    top: 5px;
+    right: 5px;
+}
+
+#pauseIcon i{
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 5vmin;
+    letter-spacing: 1vmin;
 }
 
 
@@ -80,7 +103,8 @@ button:active{
 
 .ball{
     background-color: white;
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 3px white;
+    border-radius: 20px;
 }
 
 .bat{
@@ -167,7 +191,7 @@ i{
     }
     button{
         width: 16vmax;
-        height: 9vmax;
+        height: 6vmax;
     }
     i{
         font-size: 270%;

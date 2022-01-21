@@ -12,11 +12,20 @@
 
 <body>
     <div id="canvas">
+        <div id="pause">
+            <span id="pauseIcon">
+                <i id="pause_logo" class="fas fa-play"></i>
+                <i id="player_logo" class="fas fa-user"></i>
+            </span>
+            <span id="pause_hscore">High Score: 0</span>
+            <span id="pause_score">Score: 0</span>
+        </div>
         <div id="control_panel" class="control_panel">
-            <h2>Snake Mania!!</h2>
+            <h2>Ping The Pong!!</h2>
             <span id="high_score">High Score: 0</span>
             <button id="play_pause">Play</button>
             <button id="is_multiplayer">Multi Player</button>
+            <span>If you have external keybrard: <br>Left bat: (w, s) <br>Right bat:(up, down)arrow</span>
         </div>
         <div id="game_over">Game Over!!
             <span id="high_score_1"></span>
@@ -25,18 +34,18 @@
         </div>
         <div class="controler">
             <span class="player" id="player_1">Player</span>
-            <button class="control_buttons" id="r_go_up" onmousedown="clicked(1)" onmouseup="not_clicked(1)">
+            <button class="control_buttons" id="r_go_up">
                 <i class="fas fa-arrow-up"></i></button>
-            <button class="control_buttons" id="r_go_down" onmousedown="clicked(2)" onmouseup="not_clicked(2)">
+            <button class="control_buttons" id="r_go_down">
                 <i class="fas fa-arrow-down"></i>
         </div>
         <div id="board"></div>
         <div class="controler">
             <div id="blocker" class="blocker">You are playing single player</div>
             <span class="player" id="player_2">Bot</span>
-            <button class="control_buttons" id="l_go_up" onmousedown="clicked(-1)" onmouseup="not_clicked(-1)">
+            <button class="control_buttons" id="l_go_up">
                 <i class="fas fa-arrow-up"></i></button>
-            <button class="control_buttons" id="l_go_down" onmousedown="clicked(-2)" onmouseup="not_clicked(-2)">
+            <button class="control_buttons" id="l_go_down">
                 <i class="fas fa-arrow-down"></i>
         </div>
     </div>
