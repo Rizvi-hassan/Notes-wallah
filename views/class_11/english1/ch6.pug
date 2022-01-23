@@ -1,6 +1,13 @@
-extends ../../base.pug
-block scripts 
-    link(rel="stylesheet", href="../static/css/chapter.css")
+extends ../../chap_loaded.pug 
 
-block content 
-    p Notes will be available soon 
+
+block title-space 
+    a(href="/english_11") 
+        | The Browning Version  
+        
+block content-space 
+    div.content_space 
+        a(href="https://drive.google.com/file/d/1DzvYV_zDtwJsZxRf9xQS9xRR-EPsSiBb/view?usp=sharing" target='_blank') Question and Answers 
+            i.fa.fa-arrow-right(aria-hidden='true')
+        <iframe src="https://drive.google.com/file/d/1DzvYV_zDtwJsZxRf9xQS9xRR-EPsSiBb/preview" width="640" height="480" allow="autoplay"></iframe>
+    

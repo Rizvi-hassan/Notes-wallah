@@ -1,6 +1,12 @@
-extends ../../base.pug
-block scripts 
-    link(rel="stylesheet", href="../static/css/chapter.css")
+extends ../../chap_loaded.pug 
 
-block content 
-    p Notes will be available soon 
+
+block title-space 
+    a(href="/english_11") 
+        | The Voice of the Rain 
+block content-space 
+    div.content_space 
+        a(href="https://drive.google.com/file/d/1bHDaazRQ0ULVE9Z7HKX-jsmcE6hKr_hb/view?usp=sharing" target='_blank') Question and answers 
+            i.fa.fa-arrow-right(aria-hidden='true')
+        <iframe src="https://drive.google.com/file/d/1bHDaazRQ0ULVE9Z7HKX-jsmcE6hKr_hb/preview" width="640" height="480" allow="autoplay"></iframe>
+    
