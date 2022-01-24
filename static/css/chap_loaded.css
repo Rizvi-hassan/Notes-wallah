@@ -52,6 +52,11 @@ a{
     padding: 0 3%;
 }
 
+.credit{
+    color: white;
+    text-align: right;
+    width: 95%;
+}
 .note a{
     font-weight: bold;
     color: #010561;

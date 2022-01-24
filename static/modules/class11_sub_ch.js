@@ -263,6 +263,9 @@ app.get('/english2_ch8_11', (req, res) => {
 }
 
 function port_physical(app) {
+    app.get('/physical_homework', (req, res) => {
+        res.status(200).render('class_11/physical/homework.pug');
+    });
     app.get('/physical_ch1_11', (req, res) => {
         res.status(200).render('class_11/physical/ch1.pug');
     });
