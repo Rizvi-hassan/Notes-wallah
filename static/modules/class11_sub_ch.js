@@ -159,6 +159,9 @@ function port_computer(app){
     app.get('/computer_assign', (req, res) => {
         res.status(200).render('class_11/computer/assign.pug');
     });
+    app.get('/computer_theory_term_2', (req, res) => {
+        res.status(200).render('class_11/computer/theory.pug');
+    });
 
     app.get('/computer_programs_term_1', (req, res) => {
         res.status(200).render('class_11/computer/prog_1.pug');
