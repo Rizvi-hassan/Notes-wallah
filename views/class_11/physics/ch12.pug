@@ -1,6 +1,14 @@
-extends ../../base.pug
-block scripts 
-    link(rel="stylesheet", href="../static/css/chapter.css")
+extends ../../chap_loaded.pug 
 
-block content 
-    p Notes will be available soon 
+
+block title-space 
+    a(href="/physical_11") 
+        | Thermodynamics   
+    
+block content-space 
+    span.credit
+        |&#x02015 Dev Rishi Kashyap
+    div.content_space 
+        a(href="https://drive.google.com/file/d/17szSgQzriysRiK9TB7tPtShhj0GnbYsP/view?usp=sharingg" target='_blank') Notes on Thermodynamics
+            i.fa.fa-arrow-right(aria-hidden='true')
+        <iframe src="https://drive.google.com/file/d/17szSgQzriysRiK9TB7tPtShhj0GnbYsP/preview" width="640" height="480" allow="autoplay"></iframe>
