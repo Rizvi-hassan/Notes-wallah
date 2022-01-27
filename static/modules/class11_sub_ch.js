@@ -111,6 +111,9 @@ function port_physics(app){
 }
 
 function port_chemistry(app){
+    app.get('/chemistry_homework', (req, res) => {
+        res.status(200).render('class_11/chemistry/homework.pug');
+    });
     app.get('/chemistry_ch1_11', (req, res) => {
         res.status(200).render('class_11/chemistry/ch1.pug');
     });
