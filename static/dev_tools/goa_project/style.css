@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Redressed&family=Shizuru&family=Source+Code+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #94c2cf;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg, #023f50, #94c2cf);
+    border-radius: 5px;
+}
+
+/* first pages */
+.first{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+}
+
+.intro{
+    background-color: white;
+    position: absolute;
+    z-index: 100;
+    display: block;
+    margin: 3px;
+    width: 99%;
+    height: 99%;
+    text-align: center;
+    padding: 1rem;
+    border: 10px double black;
+}
+.intro h1, .acknowledgement h1, .certificate h1{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.acknowledgement p, .certificate p{
+    margin: 29px 56px;
+    text-align: left;
+    font-family: initial;
+    font-size: 30px;
+}
+
+.hod, .prnc{
+    position: absolute;
+    width: 30%;
+    
+}
+.hod{
+    bottom: 10%;
+    left: 10%;
+}
+.prnc{
+    bottom: 10%;
+    right: 10%;
+}
+.intro img{
+    width: 17%;
+    padding: 5px;
+}
+
+
+.acknowledgement{
+    position: absolute;
+    background-color: white;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    text-align: center;
+    padding: 1rem;
+    border: 10px double black;
+}
+.certificate{
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 3px;
+    text-align: center;
+    padding: 1rem;
+    border: 10px double black;
+}
+
+table{
+    width: 60%;
+    margin: 2% auto;
+    margin-bottom: 0%;
+}
+table,th,td {
+        border: 1px solid black;
+        text-align: left;
+        padding: 6px;
+        border-spacing: 5px;
+    }
+
+
+/* main content  */
+body{
+    background: transparent;
+    position: relative;
+    width: 100%;
+}
+body::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    background: url(img/bg.png) no-repeat center/cover;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    z-index: -1000;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('img/goa_1.png') no-repeat center/cover;
+    border: 2px solid black;
+    transition: background 300ms ease;
+}
+
+.backToTop{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #4ab3bb;
+    z-index: 1000;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.3;
+    display: grid;
+    place-items: center;
+}
+
+.backToTop:active{
+    background-color: #358186;
+}
+
+.quote{
+    position: absolute;
+    width: 52%;
+    top: 2%;
+    background: #ffffff7a;
+    left: 25%;
+    left: 2;
+    font-size: 38px;
+    padding: 8px;
+    font-weight: bold;
+    font-family: 'Redressed', cursive;
+    border-radius: 10px;
+    line-height: 1.5;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: #043072;
+    transition: background-color 500ms ease;
+}
+
+.typer{
+    position: absolute;
+    width: 93%;
+    height: 6%;
+    bottom: 10%;
+    background: #ffffff7a;
+    left: 3%;
+    left: 2;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #000000;
+    transition: background-color 500ms ease;
+    text-align: center;
+}
+
+#typing{
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.quote:hover, .typer:hover, .contents:hover{
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.contents{
+    border-radius: 10px;
+    top: 34%;
+    left: 38%;
+    display: block;
+    position: absolute;
+    width: 25%;
+    padding: 15px;
+    line-height: 1.5;
+    background: #ffffff7a;
+    transition: background-color 500ms ease;
+}
+
+.contents h2{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.contents ul{
+    padding-left: 30px;
+}
+
+.contents ul li{
+    font-weight: bolder;
+}
+
+.contents ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #460ba7;
+}
+
+hr{
+    border: 1px solid #104f5c;
+    margin: 0 10%;
+}
+.container{
+    padding: 15px;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.container h1{
+    position: relative;
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 1px;
+}
+.container h1::before{
+    content: "";
+    position: absolute;
+    width: 83%;
+    height: 17%;
+    background-color: #561414;
+    border-radius: 5px;
+    bottom: -6px;
+    left: 8%;
+}
+
+.container .boxes{
+    width: 100%;
+    height: 79vh;
+    /* border: 2px solid black; */
+    display: flex;
+    
+}
+
+.container .boxes .pic{
+    position: relative;
+    width: 50%;
+}
+.container .boxes .info {
+    border-left: 1px solid rgb(56, 60, 61);
+    width: 50%;
+}
+
+.container .boxes .info p{
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    padding: 0 16px;
+    text-align: left;
+    line-height: 1.5;
+    color: #302f2f;
+    transition: transform 200ms ease;
+    padding-bottom: 8px;
+}
+.container .boxes .info p:hover{
+    color: black;
+    transform: scale(1.02);
+}
+
+
+@keyframes slide {
+    0%{
+        opacity: 0;
+        transform: translatey(10%);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translatey(5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0%);
+    }
+}
+
+.container .boxes .pic .image{
+    border-radius: 10px;
+    box-shadow: 0 0 4px 1px #ffffffc7;    
+    width: 98%;
+    height: 48%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    transition: transform 500ms ease-out, width 500ms ease-out;
+    border: 1px solid white;
+}
+
+.container .boxes .pic .image:hover{
+    z-index: 100;
+}
+
+.container .boxes .pic .image h2{
+    font-family: 'Bree Serif', serif;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    background-color: rgba(255, 255, 255, 0.678);
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    padding: 1px 5px;
+    
+}
+.container .boxes:hover .info p{
+    animation: slide 500ms ease-in;
+}
+
+.container .boxes:hover .image:nth-child(1){
+    transform: translate(0%, 0%);
+    width: 70%;
+}
+.container .boxes:hover .image:nth-child(2){
+    transform: translate(8%,-80%);
+    width: 70%;
+}
+.container .boxes:hover .image:nth-child(3){
+    transform: translate(-170%, 56%);
+    width: 70%;
+}
+.container .boxes:hover .image:nth-child(4){
+    transform: translate(-162%, -25%);
+    width: 70%;
+}
+
+.container .boxes #pic_1 .image:nth-child(1){
+    background: url('img/colva_beach.png') no-repeat center/cover;
+    top: 0%;
+    left: 0%;
+}
+.container .boxes #pic_1 .image:nth-child(2){
+    background: url('img/Dona_Paula_Beach.png') no-repeat center/cover;
+    bottom: 0%;
+    left: 0;
+}
+.container .boxes #pic_1 .image:nth-child(3){
+    background: url('img/Morjim_Beach.png') no-repeat center/cover;
+    top: 0;
+    right: -100%;
+}
+.container .boxes #pic_1 .image:nth-child(4){
+    background: url('img/Palolem_Beach.png') no-repeat center/cover;
+    bottom: 0;
+    right: -100%;
+}
+
+
+.container .boxes #pic_2 .image:nth-child(1){
+    background: url('img/food_1.png') no-repeat center/cover;
+    top: 0%;
+    left: 0%;
+}
+.container .boxes #pic_2 .image:nth-child(2){
+    background: url('img/food_2.png') no-repeat center/cover;
+    bottom: 0%;
+    left: 0;
+}
+.container .boxes #pic_2 .image:nth-child(3){
+    background: url('img/food_3.png') no-repeat center/cover;
+    top: 0;
+    right: -100%;
+}
+.container .boxes #pic_2 .image:nth-child(4){
+    background: url('img/food_4.png') no-repeat center/cover;
+    bottom: 0;
+    right: -100%;
+}
+
+.container .boxes #pic_3 .image:nth-child(1){
+    background: url('img/culture_1.png') no-repeat center/cover;
+    top: 0%;
+    left: 0%;
+}
+.container .boxes #pic_3 .image:nth-child(2){
+    background: url('img/culture_2.png') no-repeat center/cover;
+    bottom: 0%;
+    left: 0;
+}
+.container .boxes #pic_3 .image:nth-child(3){
+    background: url('img/culture_3.png') no-repeat center/cover;
+    top: 0;
+    right: -100%;
+}
+.container .boxes #pic_3 .image:nth-child(4){
+    background: url('img/culture_4.png') no-repeat center/cover;
+    bottom: 0;
+    right: -100%;
+}
+
+.container .boxes #pic_4 .image:nth-child(1){
+    background: url('img/goa_5.png') no-repeat center/cover;
+    top: 0%;
+    left: 0%;
+}
+.container .boxes #pic_4 .image:nth-child(2){
+    background: url('img/site_2.png') no-repeat center/cover;
+    bottom: 0%;
+    left: 0;
+}
+.container .boxes #pic_4 .image:nth-child(3){
+    background: url('img/site_3.png') no-repeat center/cover;
+    top: 0;
+    right: -100%;
+}
+.container .boxes #pic_4 .image:nth-child(4){
+    background: url('img/site_4.jpg') no-repeat center/cover;
+    bottom: 0;
+    right: -100%;
+}
+
+
+.container .boxes #pic_5 .image:nth-child(1){
+    background: url('img/city_1.png') no-repeat center/cover;
+    top: 0%;
+    left: 0%;
+}
+.container .boxes #pic_5 .image:nth-child(2){
+    background: url('img/city_2.png') no-repeat center/cover;
+    bottom: 0%;
+    left: 0;
+}
+.container .boxes #pic_5 .image:nth-child(3){
+    background: url('img/city_3.png') no-repeat center/cover;
+    top: 0;
+    right: -100%;
+}
+.container .boxes #pic_5 .image:nth-child(4){
+    background: url('img/city_4.png') no-repeat center/cover;
+    bottom: 0;
+    right: -100%;
+}
+
+
+.container .boxes #pic_6 .image:nth-child(1){
+    background: url('img/geo_1.jpg') no-repeat center/cover;
+    top: 0%;
+    left: 0%;
+}
+.container .boxes #pic_6 .image:nth-child(2){
+    background: url('img/geo_2.jpg') no-repeat center/cover;
+    bottom: 0%;
+    left: 0;
+}
+.container .boxes #pic_6 .image:nth-child(3){
+    background: url('img/geo_3.jpg') no-repeat center/cover;
+    top: 0;
+    right: -100%;
+}
+.container .boxes #pic_6 .image:nth-child(4){
+    background: url('img/goa_4.png') no-repeat center/cover;
+    bottom: 0;
+    right: -100%;
+}
+
+
+
+footer{
+    border: 1px solid black;
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+footer h2{
+    font-family: 'Bree Serif', serif;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+.conclusion{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    text-align: left;
+}
+
+.conclusion ul{
+    padding-left: 25px;
+    display: flex;
+}
+
+.conclusion ul li{
+    margin: 20px;
+}
+
+
+.cont{
+    width: 100%;
+    height: 40vh;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.persons{
+    border-radius: 5px;
+    width: 19%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.persons:nth-child(1){
+    background: url('img/kaushik.jpg') no-repeat center/cover;
+}
+.persons:nth-child(2){
+    background: url('img/abhishek.jpeg') no-repeat center/cover;
+}
+.persons:nth-child(3){
+    background: url('img/atul.jpeg') no-repeat center/cover;
+}
+.persons:nth-child(4){
+    background: url('img/raunak.jpeg') no-repeat center/cover;
+}
+.persons:nth-child(5){
+    background: url('img/himangshu.jpeg') no-repeat center/cover;
+}
+
+.persons .nameOf{
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background-color: #000000eb;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 500ms ease-out;
+}
+
+
+.persons:nth-child(1):hover .nameOf{
+    transform: translateY(0%);
+}
+.persons:nth-child(2):hover .nameOf{
+    transform: translateY(0%);
+}
+.persons:nth-child(3):hover .nameOf{
+    transform: translateY(0%);
+}
+.persons:nth-child(4):hover .nameOf{
+    transform: translateY(0%);
+}
+.persons:nth-child(5):hover .nameOf{
+    transform: translateY(0%);
+}

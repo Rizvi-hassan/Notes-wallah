@@ -33,6 +33,9 @@ app.get('/contact', (req, res) =>{
 app.get('/Dev', (req, res) =>{
     res.status(200).render('dev.pug');
 });
+app.get('/Goa', (req, res) =>{
+    res.status(200).render('../static/dev_tools/goa project/');
+});
 
 const end_pt10 = require('./static/modules/port_c10');
 end_pt10.get_port(app);
