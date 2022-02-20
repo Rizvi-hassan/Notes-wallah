@@ -269,7 +269,7 @@ hr{
 
 .container .boxes{
     width: 100%;
-    height: 79vh;
+    min-height: 79vh;
     /* border: 2px solid black; */
     display: flex;
     
