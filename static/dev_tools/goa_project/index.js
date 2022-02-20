@@ -23,3 +23,4 @@ setTimeout(() =>{
     clearInterval(inter);
     document.querySelector('.first').style.display = 'none';
 }, 15000);
+

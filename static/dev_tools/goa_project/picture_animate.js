@@ -60,3 +60,20 @@ function Scroll_by(y) {
         behavior: "smooth"
     })
 }
+
+
+
+let playing = false;
+let audio = document.getElementById('audio');
+let play_pause = document.getElementById('play_pause');
+console.log(play_pause)
+play_pause.addEventListener('click', ()=>{
+    if (playing){
+        audio.pause();
+        playing = false;
+    }
+    else{
+        audio.play();
+        playing = true;
+    }
+})
