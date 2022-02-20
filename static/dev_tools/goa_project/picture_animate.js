@@ -71,9 +71,11 @@ play_pause.addEventListener('click', ()=>{
     if (playing){
         audio.pause();
         playing = false;
+        play_pause.innerHTML = '<i class=\"fa-solid fa-play\"></i>';
     }
     else{
         audio.play();
         playing = true;
+        play_pause.innerHTML = "<i class=\"fa-solid fa-pause\"></i>";
     }
 })
