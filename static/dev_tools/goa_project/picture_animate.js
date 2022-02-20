@@ -13,8 +13,8 @@ setInterval(() => {
 let flag = true;
 let pipe = document.getElementById('pipe');
 setInterval(() => {
-    if (flag) { pipe.innerHTML = ""; flag = false; }
-    else { pipe.innerHTML = "|"; flag = true; }
+    if (flag) { pipe.style.opacity="0"; flag = false; }
+    else { pipe.style.opacity="1"; flag = true; }
 }, 300)
 
 
